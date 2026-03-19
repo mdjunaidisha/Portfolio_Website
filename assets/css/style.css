@@ -481,17 +481,82 @@ footer {
    RESPONSIVE
 ══════════════════════════════════════════ */
 @media(max-width: 768px) {
+  /* Nav */
   .nav-links { display: none; }
   .hamburger { display: flex; }
+  .nav-actions .btn { display: none; } /* hide "Hire Me" — accessible via mobile menu */
+
+  /* Hero */
+  #hero { padding: 100px 0 60px; }
   .hero-visual { display: none; }
-  .hero-stats { gap: 24px; flex-wrap: wrap; }
-  .about-grid { grid-template-columns: 1fr; gap: 32px; }
-  .contact-grid { grid-template-columns: 1fr; gap: 36px; }
-  .projects-header { flex-direction: column; align-items: flex-start; gap: 16px; }
-  .form-row { grid-template-columns: 1fr; }
+  .hero-stats {
+    gap: 20px; flex-wrap: wrap;
+    margin-top: 40px; padding-top: 28px;
+  }
+  .hero-stats > div { min-width: 80px; }
+  .stat-num { font-size: 1.8rem; }
+
+  /* Sections */
   .section { padding: 64px 0; }
+
+  /* About */
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+  .about-card { padding: 24px; }
+
+  /* Skills */
+  .skills-grid { grid-template-columns: 1fr; }
+  .skills-header { margin-bottom: 36px; }
+
+  /* Projects */
+  .projects-grid { grid-template-columns: 1fr; }
+  .projects-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+
+  /* Experience */
+  .exp-header { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .exp-date { font-size: 11px; }
+  .exp-item { padding: 20px 22px; }
+  .exp-timeline { padding-left: 20px; }
+
+  /* Certifications */
+  .cert-grid { grid-template-columns: 1fr; }
+
+  /* Contact */
+  .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+  .contact-info h2 { font-size: 1.5rem; }
+  .contact-link-value { font-size: 12px; word-break: break-all; }
+  .form-row { grid-template-columns: 1fr; }
 }
+
 @media(max-width: 480px) {
+  /* Container breathing room */
+  .container { padding: 0 16px; }
+
+  /* Hero */
+  #hero { padding: 90px 0 48px; }
+  .hero-badge { font-size: 11px; padding: 6px 14px; }
   .hero-actions { flex-direction: column; }
-  .btn { width: 100%; justify-content: center; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+  .hero-stats { gap: 16px; }
+  .hero-stats > div { min-width: calc(50% - 8px); }
+
+  /* Section titles */
+  .section-title { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+
+  /* About */
+  .edu-card { flex-direction: column; gap: 12px; }
+
+  /* Experience */
+  .exp-timeline::before { display: none; }
+  .exp-item::before { display: none; }
+  .exp-timeline { padding-left: 0; }
+
+  /* Contact form */
+  .contact-info p { font-size: 14px; }
+  .form-submit { width: 100%; justify-content: center; }
+
+  /* Toast */
+  .toast { left: 16px; right: 16px; bottom: 16px; font-size: 13px; }
+
+  /* Mobile menu links */
+  .mobile-menu a { font-size: 24px; }
 }
