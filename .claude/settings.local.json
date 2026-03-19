@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"/c/Users/mdjun/Downloads/files/index.html\" \"/c/Users/mdjun/Downloads/Portfolio_Website/index.html\")",
+      "Bash(cp \"/c/Users/mdjun/Downloads/files/assets/css/style.css\" \"/c/Users/mdjun/Downloads/Portfolio_Website/assets/css/style.css\")",
+      "Bash(cp \"/c/Users/mdjun/Downloads/files/assets/js/main.js\" \"/c/Users/mdjun/Downloads/Portfolio_Website/assets/js/main.js\")",
+      "Bash(cp \"/c/Users/mdjun/Downloads/files/pages/certificate.html\" \"/c/Users/mdjun/Downloads/Portfolio_Website/pages/certificate.html\")"
+    ]
+  }
+}

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="Mohammad Junaid Isha – AI/ML Engineer, GenAI & AI Agents Enthusiast, Google Cloud Vertex AI, Python, FastAPI. Portfolio of projects and experience."/>
+  <meta name="keywords" content="AI ML Engineer, GenAI, AI Agents, Python, Google Cloud, Vertex AI, FastAPI, Machine Learning, Deep Learning, Data Science"/>
+  <meta name="author" content="Mohammad Junaid Isha"/>
+  <meta property="og:title" content="Mohammad Junaid Isha | AI/ML Engineer"/>
+  <meta property="og:description" content="Building intelligent systems that solve real-world problems. GenAI · AI Agents · Python · GCP."/>
+  <title>Mohammad Junaid Isha | AI/ML Engineer & GenAI Builder</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+<!-- AMBIENT BACKGROUND -->
+<div class="grid-bg"></div>
+<div class="glow-orb glow-orb-1"></div>
+<div class="glow-orb glow-orb-2"></div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"><i class="fas fa-check-circle"></i> Message sent successfully!</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <span class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></span>
+  <a href="#about"         onclick="closeMobile()">About</a>
+  <a href="#skills"        onclick="closeMobile()">Skills</a>
+  <a href="#projects"      onclick="closeMobile()">Projects</a>
+  <a href="#experience"    onclick="closeMobile()">Experience</a>
+  <a href="#contact"       onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">MJ<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme"><i class="fas fa-moon"></i></button>
+      <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:13px;">Hire Me</a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="hero-content">
+      <div class="hero-badge"><span class="dot"></span> Available for Remote Opportunities</div>
+      <h1 class="hero-name">Mohammad<br/><span class="highlight">Junaid Isha</span></h1>
+      <div class="hero-role" id="typewriter"><span class="cursor">|</span></div>
+      <p class="hero-desc">
+        Building intelligent systems that solve real-world problems. Specializing in
+        Generative AI, AI Agents, and Machine Learning with Google Cloud Vertex AI,
+        Python &amp; FastAPI — open to remote &amp; international opportunities.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
+        <a href="#contact"  class="btn btn-outline"><i class="fas fa-envelope"></i> Get In Touch</a>
+        <a href="https://github.com/mdjunaidisha" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-num">5+</div><div class="stat-label">Projects Built</div></div>
+        <div><div class="stat-num">2</div><div class="stat-label">Internships</div></div>
+        <div><div class="stat-num">5</div><div class="stat-label">Certifications</div></div>
+        <div><div class="stat-num">2027</div><div class="stat-label">Graduating</div></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-ring"></div>
+      <div class="hero-ring-2"></div>
+      <div class="hero-avatar">JI</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid reveal">
+      <div>
+        <div class="section-tag">Who I Am</div>
+        <h2 class="section-title">Passionate About <span class="highlight">Intelligence</span></h2>
+        <p style="color:var(--muted);font-size:15px;line-height:1.85;margin-bottom:28px;">
+          I'm a 3rd-year B.Tech AIML student at Apex University, Jaipur, who doesn't wait for graduation to ship. I build production-ready AI applications — from GenAI legal document tools running on Google Cloud to autonomous AI Agents and deep learning classifiers.
+        </p>
+        <p style="color:var(--muted);font-size:15px;line-height:1.85;margin-bottom:32px;">
+          My approach blends solid engineering fundamentals with curiosity-driven experimentation. I'm actively seeking remote internships, freelance collaborations, or full-time roles in AI/ML and GenAI — globally.
+        </p>
+        <div class="about-info">
+          <div class="info-row"><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan, India</div>
+          <div class="info-row"><i class="fas fa-graduation-cap"></i> B.Tech AIML — Apex University (2023–2027)</div>
+          <div class="info-row"><i class="fas fa-envelope"></i> mdjunaid.isha@gmail.com</div>
+          <div class="info-row"><i class="fab fa-linkedin"></i> linkedin.com/in/mohammad-junaid-isha-aiml</div>
+          <div class="info-row"><i class="fab fa-github"></i> github.com/mdjunaidisha</div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div class="about-card">
+          <h3>🎯 Career Goal</h3>
+          <p>Land a remote or international AI/ML / GenAI engineering role where I can build scalable intelligent systems, work with cutting-edge LLMs, and grow alongside world-class teams.</p>
+        </div>
+        <div class="about-card">
+          <h3>🔭 Currently Learning</h3>
+          <p>Advanced AI Agents architectures, RAG pipelines, MLOps on Google Cloud, and LLM fine-tuning techniques for domain-specific applications.</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-university"></i></div>
+          <div>
+            <div class="edu-name">Apex University, Jaipur</div>
+            <div class="edu-deg">B.Tech — Artificial Intelligence &amp; Machine Learning (AIML)</div>
+            <div class="edu-date">Aug 2023 → July 2027</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SKILLS ══════════ -->
+<section id="skills" class="section">
+  <div class="container">
+    <div class="skills-header reveal">
+      <div class="section-tag">Expertise</div>
+      <h2 class="section-title">Skills &amp; <span class="highlight">Technologies</span></h2>
+      <p style="color:var(--muted);max-width:520px;margin:0 auto;font-size:15px;">Categorized across AI/ML, cloud, backend, and data engineering disciplines.</p>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skill-cat">
+        <div class="skill-cat-icon">🤖</div>
+        <div class="skill-cat-title">AI / Machine Learning</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Generative AI</span>
+          <span class="skill-pill">AI Agents</span>
+          <span class="skill-pill">LLMs</span>
+          <span class="skill-pill">TensorFlow</span>
+          <span class="skill-pill">PyTorch</span>
+          <span class="skill-pill">Scikit-learn</span>
+          <span class="skill-pill">XGBoost</span>
+          <span class="skill-pill">Computer Vision</span>
+          <span class="skill-pill">NLP</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-icon">☁️</div>
+        <div class="skill-cat-title">Cloud &amp; DevOps</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Google Cloud (GCP)</span>
+          <span class="skill-pill">Vertex AI</span>
+          <span class="skill-pill">Docker</span>
+          <span class="skill-pill">FastAPI</span>
+          <span class="skill-pill">REST APIs</span>
+          <span class="skill-pill">Git / GitHub</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-icon">🐍</div>
+        <div class="skill-cat-title">Languages</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">SQL (Advanced)</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">TypeScript</span>
+          <span class="skill-pill">HTML / CSS</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-icon">📊</div>
+        <div class="skill-cat-title">Data &amp; Analytics</div>
+        <div class="skill-pills">
+          <span class="skill-pill">NumPy</span>
+          <span class="skill-pill">Pandas</span>
+          <span class="skill-pill">Matplotlib</span>
+          <span class="skill-pill">Power BI</span>
+          <span class="skill-pill">DBMS</span>
+          <span class="skill-pill">Data Visualization</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-icon">🌐</div>
+        <div class="skill-cat-title">Frontend / Backend</div>
+        <div class="skill-pills">
+          <span class="skill-pill">React.js</span>
+          <span class="skill-pill">FastAPI</span>
+          <span class="skill-pill">Node.js (Basics)</span>
+          <span class="skill-pill">Prompt Engineering</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-icon">🏅</div>
+        <div class="skill-cat-title">Soft Skills</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Problem Solving</span>
+          <span class="skill-pill">Self-Learning</span>
+          <span class="skill-pill">Research</span>
+          <span class="skill-pill">Communication</span>
+          <span class="skill-pill">Agile</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROJECTS ══════════ -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="projects-header reveal">
+      <div>
+        <div class="section-tag">Portfolio</div>
+        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+      </div>
+      <a href="https://github.com/mdjunaidisha" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> All Repos</a>
+    </div>
+    <div class="projects-grid reveal">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon" style="background:rgba(0,212,255,.1);color:var(--accent);">🏥</div>
+          <div class="project-name">AI Health Agent</div>
+          <div class="project-desc">An autonomous AI-powered health agent with multi-step reasoning and tool-use capabilities. Built with LLM architecture on Google Cloud, it interprets health queries, retrieves contextual information, and generates safe, structured guidance — with responsible AI guardrails built-in.</div>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">AI Agents</span>
+            <span class="tag">LLM</span>
+            <span class="tag tag-purple">Google Cloud</span>
+            <span class="tag tag-amber">FastAPI</span>
+          </div>
+        </div>
+        <div class="project-bot">
+          <div class="project-links">
+            <a href="https://github.com/mdjunaidisha" target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+          <div class="proj-lang"><span class="lang-dot" style="background:#3572A5;"></span>Python</div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon" style="background:rgba(124,58,237,.12);color:#a78bfa;">⚖️</div>
+          <div class="project-name">Demystifying Legal Documents</div>
+          <div class="project-desc">Full-stack GenAI application that simplifies complex legal jargon using Google Cloud's Generative AI APIs. Features a React.js frontend, FastAPI backend with real-time streaming, making legal documents instantly comprehensible to non-legal users.</div>
+          <div class="project-tags">
+            <span class="tag tag-purple">Vertex AI</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">React.js</span>
+            <span class="tag tag-amber">FastAPI</span>
+            <span class="tag">GenAI</span>
+          </div>
+        </div>
+        <div class="project-bot">
+          <div class="project-links">
+            <a href="https://github.com/mdjunaidisha/Demystifying-Legal-Documents" target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+          <div class="proj-lang"><span class="lang-dot" style="background:#2b7489;"></span>TypeScript</div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon" style="background:rgba(245,158,11,.12);color:#fbbf24;">🔢</div>
+          <div class="project-name">MNIST CNN Classifier</div>
+          <div class="project-desc">Convolutional Neural Network built from scratch to classify handwritten digits with high test accuracy. Includes architecture experimentation (kernel sizes, pooling, dropout), training metric visualization, and model explainability through confusion matrices.</div>
+          <div class="project-tags">
+            <span class="tag tag-amber">TensorFlow</span>
+            <span class="tag">CNN</span>
+            <span class="tag">Python</span>
+            <span class="tag tag-green">Computer Vision</span>
+          </div>
+        </div>
+        <div class="project-bot">
+          <div class="project-links">
+            <a href="https://github.com/mdjunaidisha/mnist-cnn-classifier" target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+          <div class="proj-lang"><span class="lang-dot" style="background:#3572A5;"></span>Python</div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon" style="background:rgba(16,185,129,.12);color:#34d399;">🖼️</div>
+          <div class="project-name">Image Captioning System</div>
+          <div class="project-desc">Automated image captioning pipeline leveraging pre-trained InceptionV3 for feature extraction combined with sequence modeling for natural language caption generation. Demonstrates multimodal AI at the intersection of computer vision and NLP.</div>
+          <div class="project-tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag tag-green">InceptionV3</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Deep Learning</span>
+          </div>
+        </div>
+        <div class="project-bot">
+          <div class="project-links">
+            <a href="https://github.com/mdjunaidisha" target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+          <div class="proj-lang"><span class="lang-dot" style="background:#3572A5;"></span>Python</div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon" style="background:rgba(239,68,68,.1);color:#f87171;">🎨</div>
+          <div class="project-name">Color Changer App</div>
+          <div class="project-desc">Interactive JavaScript web application demonstrating DOM manipulation and dynamic UI updates. A clean, lightweight tool built to sharpen frontend development fundamentals with modern JavaScript.</div>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">DOM API</span>
+          </div>
+        </div>
+        <div class="project-bot">
+          <div class="project-links">
+            <a href="https://github.com/mdjunaidisha/ColorChanger" target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+          <div class="proj-lang"><span class="lang-dot" style="background:#f1e05a;"></span>JavaScript</div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon" style="background:rgba(0,212,255,.1);color:var(--accent);">📊</div>
+          <div class="project-name">Data Visualization Dashboards</div>
+          <div class="project-desc">Interactive data dashboards transforming raw datasets into executive-ready insights using Python's data ecosystem and Power BI. Helped stakeholders identify trends and make data-driven decisions faster through visual storytelling.</div>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">Pandas</span>
+            <span class="tag tag-amber">Matplotlib</span>
+          </div>
+        </div>
+        <div class="project-bot">
+          <div class="project-links">
+            <a href="https://github.com/mdjunaidisha" target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+          <div class="proj-lang"><span class="lang-dot" style="background:#3572A5;"></span>Python</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ EXPERIENCE ══════════ -->
+<section id="experience" class="section">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">Work History</div>
+      <h2 class="section-title">Experience &amp; <span class="highlight">Internships</span></h2>
+    </div>
+    <div class="exp-timeline reveal" style="margin-top:48px;">
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Data Science &amp; AI/ML Intern</div>
+            <div class="exp-company">EVOASTRA VENTURES PVT LTD</div>
+          </div>
+          <div class="exp-date">Oct 2025 – Nov 2025</div>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;">
+          <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">ML</span><span class="tag tag-amber">Power BI</span>
+        </div>
+        <div class="exp-bullets">
+          <div class="exp-bullet">Applied Python, SQL, and Scikit-learn to build ML models for business use cases, accelerating data-driven decision-making.</div>
+          <div class="exp-bullet">Designed interactive Power BI dashboards transforming raw data into executive-ready KPI reports and visualizations.</div>
+          <div class="exp-bullet">Worked end-to-end ML pipeline — data cleaning, feature engineering, model training, and evaluation using XGBoost and Pandas.</div>
+          <div class="exp-bullet">Participated in Agile sprint reviews in a cross-functional engineering environment.</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Intern</div>
+            <div class="exp-company">Edunate Foundation</div>
+          </div>
+          <div class="exp-date">Nov 2025 – Dec 2025</div>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;">
+          <span class="tag">AI</span><span class="tag">Python</span><span class="tag">EdTech</span>
+        </div>
+        <div class="exp-bullets">
+          <div class="exp-bullet">Contributed to educational technology initiatives using AI and data skills to support improved learning outcomes.</div>
+          <div class="exp-bullet">Built and improved digital content pipelines and tools using Python and web technologies.</div>
+          <div class="exp-bullet">Delivered measurable value in a fast-paced, impact-driven nonprofit setting.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CERTIFICATIONS ══════════ -->
+<section id="certifications" class="section">
+  <div class="container reveal">
+    <div class="section-tag">Credentials</div>
+    <h2 class="section-title">Certifications &amp; <span class="highlight">Learning</span></h2>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <div class="cert-icon">🤖</div>
+        <div>
+          <div class="cert-name">5-Day AI Agents Intensive Course</div>
+          <div class="cert-by">Google Cloud</div>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">📊</div>
+        <div>
+          <div class="cert-name">Intermediate Machine Learning</div>
+          <div class="cert-by">Kaggle</div>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🐍</div>
+        <div>
+          <div class="cert-name">Python (Basic & Advanced)</div>
+          <div class="cert-by">HackerRank / Kaggle</div>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🌐</div>
+        <div>
+          <div class="cert-name">Employability Skills &amp; Digital Literacy with AI</div>
+          <div class="cert-by">IBM · Sponsored by Edunet Foundation</div>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🔬</div>
+        <div>
+          <div class="cert-name">Machine Learning Introduction for Everyone</div>
+          <div class="cert-by">Online Course Platform</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact" class="section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:56px;" class="reveal">
+      <div class="section-tag">Let's Talk</div>
+      <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+      <p style="color:var(--muted);max-width:480px;margin:0 auto;font-size:15px;">Open to remote internships, freelance AI/ML projects, and full-time engineering roles globally.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <h2>Let's build something <span class="highlight">intelligent</span> together.</h2>
+        <p>Whether you have a project in mind, a role to fill, or just want to connect — I'd love to hear from you. I typically respond within 24 hours.</p>
+        <div class="contact-links">
+          <a href="mailto:mdjunaid.isha@gmail.com" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            <div><div class="contact-link-label">Email</div><div class="contact-link-value">mdjunaid.isha@gmail.com</div></div>
+          </a>
+          <a href="https://www.linkedin.com/in/mohammad-junaid-isha-aiml/" target="_blank" class="contact-link">
+            <i class="fab fa-linkedin"></i>
+            <div><div class="contact-link-label">LinkedIn</div><div class="contact-link-value">mohammad-junaid-isha-aiml</div></div>
+          </a>
+          <a href="https://github.com/mdjunaidisha" target="_blank" class="contact-link">
+            <i class="fab fa-github"></i>
+            <div><div class="contact-link-label">GitHub</div><div class="contact-link-value">mdjunaidisha</div></div>
+          </a>
+          <div class="contact-link" style="cursor:default;">
+            <i class="fas fa-map-marker-alt"></i>
+            <div><div class="contact-link-label">Location</div><div class="contact-link-value">Jaipur, India · Remote Worldwide</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:36px;">
+          <div class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label>YOUR NAME</label>
+                <input type="text" id="fname" placeholder="John Doe"/>
+              </div>
+              <div class="form-group">
+                <label>EMAIL ADDRESS</label>
+                <input type="email" id="femail" placeholder="john@company.com"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>SUBJECT</label>
+              <input type="text" id="fsubject" placeholder="Remote AI/ML Internship Opportunity"/>
+            </div>
+            <div class="form-group">
+              <label>MESSAGE</label>
+              <textarea id="fmessage" placeholder="Hi Junaid, we're hiring for a remote AI engineer role..."></textarea>
+            </div>
+            <button class="form-submit" onclick="submitForm()"><i class="fas fa-paper-plane"></i> Send Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-logo">MJ<span style="color:var(--accent);">.</span></div>
+    <div class="footer-socials">
+      <a href="https://github.com/mdjunaidisha"    target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/mohammad-junaid-isha-aiml/" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:mdjunaid.isha@gmail.com"      class="social-btn"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="footer-copy">
+      &copy; 2025 Mohammad Junaid Isha · Designed with ❤️ · AI/ML Engineer &amp; GenAI Builder
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
