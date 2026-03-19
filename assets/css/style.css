@@ -432,6 +432,7 @@ nav.scrolled {
   border-radius: 10px; padding: 13px 16px;
   font-family: 'DM Sans', sans-serif; font-size: 14px; color: var(--text);
   outline: none; transition: var(--transition); resize: none;
+  width: 100%; /* prevent overflow inside flex/grid containers */
 }
 .form-group input:focus, .form-group textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(0,212,255,.1); }
 .form-group textarea { min-height: 130px; }
@@ -478,85 +479,149 @@ footer {
 .toast.show { transform: translateY(0); opacity: 1; }
 
 /* ══════════════════════════════════════════
-   RESPONSIVE
+   RESPONSIVE — TABLET LANDSCAPE  (≤ 1024px)
 ══════════════════════════════════════════ */
-@media(max-width: 768px) {
-  /* Nav */
+@media (max-width: 1024px) {
+  /* Hero: hide the animated visual before it overlaps text */
+  .hero-visual { display: none; }
+
+  /* Nav: tighten link spacing on smaller laptops */
+  .nav-links { gap: 22px; }
+
+  /* About: reduce gap so columns don't get too narrow */
+  .about-grid { gap: 40px; }
+
+  /* Contact: reduce gap */
+  .contact-grid { gap: 36px; }
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — TABLET PORTRAIT  (≤ 768px)
+══════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* ── Glow orbs: scale down to prevent horizontal overflow ── */
+  .glow-orb-1 { width: 300px; height: 300px; top: -120px; right: -80px; }
+  .glow-orb-2 { width: 250px; height: 250px; left: -100px; }
+
+  /* ── Nav ── */
   .nav-links { display: none; }
   .hamburger { display: flex; }
-  .nav-actions .btn { display: none; } /* hide "Hire Me" — accessible via mobile menu */
+  .nav-actions .btn { display: none; } /* accessible via mobile-menu instead */
 
-  /* Hero */
-  #hero { padding: 100px 0 60px; }
+  /* ── Hero ── */
+  #hero { padding: 100px 0 60px; min-height: auto; }
   .hero-visual { display: none; }
   .hero-stats {
-    gap: 20px; flex-wrap: wrap;
-    margin-top: 40px; padding-top: 28px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-top: 28px;
   }
   .hero-stats > div { min-width: 80px; }
   .stat-num { font-size: 1.8rem; }
 
-  /* Sections */
+  /* ── Sections ── */
   .section { padding: 64px 0; }
 
-  /* About */
+  /* ── About ── */
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
   .about-card { padding: 24px; }
+  .info-row { font-size: 13px; word-break: break-word; overflow-wrap: break-word; }
 
-  /* Skills */
-  .skills-grid { grid-template-columns: 1fr; }
+  /* ── Skills ── */
+  .skills-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
   .skills-header { margin-bottom: 36px; }
 
-  /* Projects */
+  /* ── Projects ── */
   .projects-grid { grid-template-columns: 1fr; }
   .projects-header { flex-direction: column; align-items: flex-start; gap: 16px; }
 
-  /* Experience */
-  .exp-header { flex-direction: column; align-items: flex-start; gap: 6px; }
-  .exp-date { font-size: 11px; }
-  .exp-item { padding: 20px 22px; }
+  /* ── Experience ── */
   .exp-timeline { padding-left: 20px; }
+  .exp-item { padding: 20px 22px; }
+  .exp-header { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .exp-date { font-size: 11px; white-space: normal; } /* allow date to wrap */
 
-  /* Certifications */
+  /* ── Certifications ── */
   .cert-grid { grid-template-columns: 1fr; }
 
-  /* Contact */
+  /* ── Contact ── */
   .contact-grid { grid-template-columns: 1fr; gap: 36px; }
-  .contact-info h2 { font-size: 1.5rem; }
-  .contact-link-value { font-size: 12px; word-break: break-all; }
+  .contact-info h2 { font-size: 1.6rem; }
+  .contact-link-value { font-size: 12.5px; word-break: break-all; }
   .form-row { grid-template-columns: 1fr; }
+
+  /* ── Touch targets: minimum 44×44px for accessibility ── */
+  .btn { min-height: 44px; }
+  .social-btn { width: 44px; height: 44px; }
+  .theme-toggle { width: 44px; height: 44px; }
+  .hamburger { padding: 8px; }
 }
 
-@media(max-width: 480px) {
-  /* Container breathing room */
+/* ══════════════════════════════════════════
+   RESPONSIVE — MOBILE  (≤ 480px)
+══════════════════════════════════════════ */
+@media (max-width: 480px) {
+  /* ── Container padding ── */
   .container { padding: 0 16px; }
 
-  /* Hero */
-  #hero { padding: 90px 0 48px; }
-  .hero-badge { font-size: 11px; padding: 6px 14px; }
-  .hero-actions { flex-direction: column; }
+  /* ── Glow orbs: further shrink & reposition ── */
+  .glow-orb-1 { width: 180px; height: 180px; top: -60px; right: -50px; }
+  .glow-orb-2 { width: 160px; height: 160px; bottom: 10%; left: -60px; }
+
+  /* ── Hero ── */
+  #hero { padding: 88px 0 48px; }
+  .hero-badge { font-size: 11px; padding: 6px 12px; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
   .hero-actions .btn { width: 100%; justify-content: center; }
-  .hero-stats { gap: 16px; }
-  .hero-stats > div { min-width: calc(50% - 8px); }
+  .hero-stats { gap: 12px; }
+  .hero-stats > div { min-width: calc(50% - 6px); text-align: center; }
+  .stat-num { font-size: 1.6rem; }
+  .stat-label { font-size: 12px; }
 
-  /* Section titles */
-  .section-title { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+  /* ── Section titles ── */
+  .section-title { font-size: clamp(1.5rem, 6vw, 2rem); }
 
-  /* About */
-  .edu-card { flex-direction: column; gap: 12px; }
+  /* ── About ── */
+  .about-card { padding: 20px; }
+  .edu-card { flex-direction: column; gap: 10px; padding: 18px 20px; }
+  .info-row { font-size: 12.5px; }
 
-  /* Experience */
+  /* ── Skills ── */
+  .skills-grid { grid-template-columns: 1fr; }
+  .skill-cat { padding: 20px; }
+
+  /* ── Projects ── */
+  .project-top { padding: 20px 20px 16px; }
+  .project-bot { padding: 12px 20px; }
+
+  /* ── Experience ── */
+  .exp-timeline { padding-left: 0; }
   .exp-timeline::before { display: none; }
   .exp-item::before { display: none; }
-  .exp-timeline { padding-left: 0; }
+  .exp-item { padding: 18px; }
+  .exp-bullet { font-size: 13px; }
 
-  /* Contact form */
+  /* ── Certifications ── */
+  .cert-card { padding: 16px 18px; }
+
+  /* ── Contact ── */
+  .contact-info h2 { font-size: 1.4rem; }
   .contact-info p { font-size: 14px; }
+  .contact-link { padding: 14px 16px; gap: 12px; }
+  .contact-link-value { font-size: 12px; }
+  /* Prevent iOS Safari from auto-zooming into inputs (requires font-size ≥ 16px) */
+  .form-group input,
+  .form-group textarea { font-size: 16px; }
   .form-submit { width: 100%; justify-content: center; }
 
-  /* Toast */
+  /* ── Mobile menu ── */
+  .mobile-menu { gap: 24px; }
+  .mobile-menu a { font-size: 24px; }
+
+  /* ── Toast: stretch full-width on small screens ── */
   .toast { left: 16px; right: 16px; bottom: 16px; font-size: 13px; }
 
-  /* Mobile menu links */
-  .mobile-menu a { font-size: 24px; }
+  /* ── Footer ── */
+  .footer-copy { font-size: 12px; padding: 0 8px; }
 }
