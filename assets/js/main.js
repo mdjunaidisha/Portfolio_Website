@@ -42,9 +42,24 @@ window.addEventListener("scroll", () => {
 /* ══════════════════════════════════════════
    MOBILE MENU
 ══════════════════════════════════════════ */
-document.getElementById("hamburger").onclick = () => document.getElementById("mobileMenu").classList.add("open");
+const hamburgerBtn = document.getElementById("hamburger");
+const mobileMenuEl = document.getElementById("mobileMenu");
+
+hamburgerBtn.onclick = () => {
+  mobileMenuEl.classList.add("open");
+  hamburgerBtn.classList.add("active");
+  document.body.classList.add("menu-open");
+};
 document.getElementById("mobileClose").onclick = () => closeMobile();
-function closeMobile() { document.getElementById("mobileMenu").classList.remove("open"); }
+
+function closeMobile() {
+  mobileMenuEl.classList.remove("open");
+  hamburgerBtn.classList.remove("active");
+  document.body.classList.remove("menu-open");
+}
+
+/* Close menu on Escape key */
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeMobile(); });
 
 /* ══════════════════════════════════════════
    THEME TOGGLE
