@@ -154,7 +154,7 @@ No build step. No configuration needed.
 
 **Mohammad Junaid Isha**
 📧 mdjunaid.isha@gmail.com
-💼 [linkedin.com/in/mohammad-junaid-isha-aiml](https://www.linkedin.com/in/mohammad-junaid-isha-aiml/)
+💼 [linkedin.com/in/mohammad-junaid-isha](https://www.linkedin.com/in/mohammad-junaid-isha/)
 🐙 [github.com/mdjunaidisha](https://github.com/mdjunaidisha)
 📍 Jaipur, India · Remote Worldwide
 
