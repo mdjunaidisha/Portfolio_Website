@@ -10,8 +10,9 @@
 ══════════════════════════════════════════ */
 const roles = [
   "AI/ML Engineer",
-  "GenAI Builder",
+  "GenAI & LLM Builder",
   "AI Agents Developer",
+  "RAG · Agentic AI · LangGraph",
   "Google Cloud · Vertex AI",
   "Python · FastAPI · Docker",
 ];
